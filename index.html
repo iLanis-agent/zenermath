@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zener Math - shunt regulator arithmetic</title>
+<style>
+  :root { --accent:#6b4f3a; --ink:#221a13; --paper:#f8f5f1; --soft:#eae2d9; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2.5rem 1.2rem; }
+  h1 { font-size:2.2rem; color:var(--accent); }
+  p.lede { font-size:1.12rem; margin:.9rem 0 1.6rem; }
+  .boundary { margin-bottom:1.6rem; }
+  section { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1.1rem 1.2rem; margin-bottom:1.2rem; }
+  h2 { font-size:1.18rem; margin-bottom:.5rem; }
+  section p { font-size:.98rem; }
+  a.btn { display:inline-block; margin-top:1.4rem; background:var(--accent); color:#fff; text-decoration:none; padding:.8rem 1.6rem; border-radius:999px; font-size:1.05rem; }
+  footer { margin-top:2.2rem; font-size:.85rem; color:#7d6b58; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Zener Math</h1>
+  <p class="lede">Dropping 12 V to 5.1 V at 25 mA calls for a 276 Ω series resistor.</p>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    Zener Math works out series resistors and dissipations for a shunt zener regulator from the numbers you type. It treats the zener voltage as fixed, so it has not seen your circuit and does not know the knee, the tolerance, the temperature drift or the part variant, and it gives no verdict that a regulator circuit is adequate or safe. Every number here is your own entry.
+  </div>
+  <p class="lede" style="font-size:1rem">Starting examples: 12 V down to 5.1 V at 25 mA, what a 276 Ω resistor burns, and what the zener takes if the load disconnects.</p>
+  <section>
+    <h2>The resistor truth</h2>
+    <p>Dropping 12 V to 5.1 V at 25 mA calls for a 276 Ω series resistor.</p>
+  </section>
+  <section>
+    <h2>The power truth</h2>
+    <p>With a 276 Ω resistor, the drop runs 25 mA and the resistor burns 172.5 mW.</p>
+  </section>
+  <section>
+    <h2>The no-load truth</h2>
+    <p>If the load disconnects, the full 25 mA flows through the zener, which works out to 127.5 mW across 5.1 V.</p>
+  </section>
+  <a class="btn" href="app.html">Run your numbers</a>
+  <footer>Zener Math is exact arithmetic over the numbers you enter, nothing more.</footer>
+</main>
+</body>
+</html>
