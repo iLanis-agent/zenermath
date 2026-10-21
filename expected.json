@@ -1,0 +1,923 @@
+{
+ "cases": [
+  {
+   "fn": "resistor",
+   "args": [
+    "12",
+    "5.1",
+    "25"
+   ],
+   "expect": "Dropping 12 V to 5.1 V at 25 mA calls for a 276 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "12",
+    "5.1",
+    "276"
+   ],
+   "expect": "With a 276 Ω resistor, the drop runs 25 mA and the resistor burns 172.5 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "12",
+    "5.1",
+    "276"
+   ],
+   "expect": "If the load disconnects, the full 25 mA flows through the zener, which works out to 127.5 mW across 5.1 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "89.97",
+    "19.79",
+    "64743.26"
+   ],
+   "expect": "Dropping 89.97 V to 19.79 V at 64743.26 mA calls for a 1.08 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "89.97",
+    "19.79",
+    "871588.02"
+   ],
+   "expect": "With a 871588.02 Ω resistor, the drop runs 0.08 mA and the resistor burns 5.65 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "89.97",
+    "19.79",
+    "871588.02"
+   ],
+   "expect": "If the load disconnects, the full 0.08 mA flows through the zener, which works out to 1.59 mW across 19.79 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "46.82",
+    "40.86",
+    "15796.43"
+   ],
+   "expect": "Dropping 46.82 V to 40.86 V at 15796.43 mA calls for a 0.38 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "46.82",
+    "40.86",
+    "707310.61"
+   ],
+   "expect": "With a 707310.61 Ω resistor, the drop runs 0.01 mA and the resistor burns 0.05 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "46.82",
+    "40.86",
+    "707310.61"
+   ],
+   "expect": "If the load disconnects, the full 0.01 mA flows through the zener, which works out to 0.34 mW across 40.86 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "72.29",
+    "66.39",
+    "15109.79"
+   ],
+   "expect": "Dropping 72.29 V to 66.39 V at 15109.79 mA calls for a 0.39 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "72.29",
+    "66.39",
+    "231497.88"
+   ],
+   "expect": "With a 231497.88 Ω resistor, the drop runs 0.03 mA and the resistor burns 0.15 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "72.29",
+    "66.39",
+    "231497.88"
+   ],
+   "expect": "If the load disconnects, the full 0.03 mA flows through the zener, which works out to 1.69 mW across 66.39 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "73.44",
+    "58.19",
+    "62439.56"
+   ],
+   "expect": "Dropping 73.44 V to 58.19 V at 62439.56 mA calls for a 0.24 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "73.44",
+    "58.19",
+    "605359.56"
+   ],
+   "expect": "With a 605359.56 Ω resistor, the drop runs 0.03 mA and the resistor burns 0.38 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "73.44",
+    "58.19",
+    "605359.56"
+   ],
+   "expect": "If the load disconnects, the full 0.03 mA flows through the zener, which works out to 1.47 mW across 58.19 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "26.82",
+    "26.53",
+    "81028.37"
+   ],
+   "expect": "Dropping 26.82 V to 26.53 V at 81028.37 mA calls for a 0 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "26.82",
+    "26.53",
+    "30290.99"
+   ],
+   "expect": "With a 30290.99 Ω resistor, the drop runs 0.01 mA and the resistor burns 0 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "26.82",
+    "26.53",
+    "30290.99"
+   ],
+   "expect": "If the load disconnects, the full 0.01 mA flows through the zener, which works out to 0.25 mW across 26.53 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "83.96",
+    "27.39",
+    "59143.9"
+   ],
+   "expect": "Dropping 83.96 V to 27.39 V at 59143.9 mA calls for a 0.96 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "83.96",
+    "27.39",
+    "911216.58"
+   ],
+   "expect": "With a 911216.58 Ω resistor, the drop runs 0.06 mA and the resistor burns 3.51 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "83.96",
+    "27.39",
+    "911216.58"
+   ],
+   "expect": "If the load disconnects, the full 0.06 mA flows through the zener, which works out to 1.7 mW across 27.39 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "78.79",
+    "60.97",
+    "53808.56"
+   ],
+   "expect": "Dropping 78.79 V to 60.97 V at 53808.56 mA calls for a 0.33 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "78.79",
+    "60.97",
+    "226919.31"
+   ],
+   "expect": "With a 226919.31 Ω resistor, the drop runs 0.08 mA and the resistor burns 1.4 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "78.79",
+    "60.97",
+    "226919.31"
+   ],
+   "expect": "If the load disconnects, the full 0.08 mA flows through the zener, which works out to 4.79 mW across 60.97 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "77.65",
+    "67.71",
+    "77957.61"
+   ],
+   "expect": "Dropping 77.65 V to 67.71 V at 77957.61 mA calls for a 0.13 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "77.65",
+    "67.71",
+    "654685.28"
+   ],
+   "expect": "With a 654685.28 Ω resistor, the drop runs 0.02 mA and the resistor burns 0.15 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "77.65",
+    "67.71",
+    "654685.28"
+   ],
+   "expect": "If the load disconnects, the full 0.02 mA flows through the zener, which works out to 1.03 mW across 67.71 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "92.93",
+    "73.59",
+    "14557.28"
+   ],
+   "expect": "Dropping 92.93 V to 73.59 V at 14557.28 mA calls for a 1.33 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "92.93",
+    "73.59",
+    "31251.86"
+   ],
+   "expect": "With a 31251.86 Ω resistor, the drop runs 0.62 mA and the resistor burns 11.97 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "92.93",
+    "73.59",
+    "31251.86"
+   ],
+   "expect": "If the load disconnects, the full 0.62 mA flows through the zener, which works out to 45.54 mW across 73.59 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "80.92",
+    "79.22",
+    "67130.52"
+   ],
+   "expect": "Dropping 80.92 V to 79.22 V at 67130.52 mA calls for a 0.03 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "80.92",
+    "79.22",
+    "942444"
+   ],
+   "expect": "With a 942444 Ω resistor, the drop runs 0 mA and the resistor burns 0 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "80.92",
+    "79.22",
+    "942444"
+   ],
+   "expect": "If the load disconnects, the full 0 mA flows through the zener, which works out to 0.14 mW across 79.22 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "85.86",
+    "72.94",
+    "47876.08"
+   ],
+   "expect": "Dropping 85.86 V to 72.94 V at 47876.08 mA calls for a 0.27 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "85.86",
+    "72.94",
+    "641132.66"
+   ],
+   "expect": "With a 641132.66 Ω resistor, the drop runs 0.02 mA and the resistor burns 0.26 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "85.86",
+    "72.94",
+    "641132.66"
+   ],
+   "expect": "If the load disconnects, the full 0.02 mA flows through the zener, which works out to 1.47 mW across 72.94 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "48.01",
+    "40.66",
+    "95715.99"
+   ],
+   "expect": "Dropping 48.01 V to 40.66 V at 95715.99 mA calls for a 0.08 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "48.01",
+    "40.66",
+    "883291.49"
+   ],
+   "expect": "With a 883291.49 Ω resistor, the drop runs 0.01 mA and the resistor burns 0.06 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "48.01",
+    "40.66",
+    "883291.49"
+   ],
+   "expect": "If the load disconnects, the full 0.01 mA flows through the zener, which works out to 0.34 mW across 40.66 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "89.11",
+    "52.17",
+    "72928.94"
+   ],
+   "expect": "Dropping 89.11 V to 52.17 V at 72928.94 mA calls for a 0.51 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "89.11",
+    "52.17",
+    "401320.94"
+   ],
+   "expect": "With a 401320.94 Ω resistor, the drop runs 0.09 mA and the resistor burns 3.4 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "89.11",
+    "52.17",
+    "401320.94"
+   ],
+   "expect": "If the load disconnects, the full 0.09 mA flows through the zener, which works out to 4.8 mW across 52.17 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "57.93",
+    "41.44",
+    "40453.2"
+   ],
+   "expect": "Dropping 57.93 V to 41.44 V at 40453.2 mA calls for a 0.41 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "57.93",
+    "41.44",
+    "960219.93"
+   ],
+   "expect": "With a 960219.93 Ω resistor, the drop runs 0.02 mA and the resistor burns 0.28 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "57.93",
+    "41.44",
+    "960219.93"
+   ],
+   "expect": "If the load disconnects, the full 0.02 mA flows through the zener, which works out to 0.71 mW across 41.44 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "78.42",
+    "22.36",
+    "82550.93"
+   ],
+   "expect": "Dropping 78.42 V to 22.36 V at 82550.93 mA calls for a 0.68 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "78.42",
+    "22.36",
+    "424371.82"
+   ],
+   "expect": "With a 424371.82 Ω resistor, the drop runs 0.13 mA and the resistor burns 7.41 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "78.42",
+    "22.36",
+    "424371.82"
+   ],
+   "expect": "If the load disconnects, the full 0.13 mA flows through the zener, which works out to 2.95 mW across 22.36 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "55.58",
+    "24.63",
+    "79583.91"
+   ],
+   "expect": "Dropping 55.58 V to 24.63 V at 79583.91 mA calls for a 0.39 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "55.58",
+    "24.63",
+    "865714.35"
+   ],
+   "expect": "With a 865714.35 Ω resistor, the drop runs 0.04 mA and the resistor burns 1.11 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "55.58",
+    "24.63",
+    "865714.35"
+   ],
+   "expect": "If the load disconnects, the full 0.04 mA flows through the zener, which works out to 0.88 mW across 24.63 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "86.67",
+    "81.33",
+    "18886.88"
+   ],
+   "expect": "Dropping 86.67 V to 81.33 V at 18886.88 mA calls for a 0.28 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "86.67",
+    "81.33",
+    "88557.16"
+   ],
+   "expect": "With a 88557.16 Ω resistor, the drop runs 0.06 mA and the resistor burns 0.32 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "86.67",
+    "81.33",
+    "88557.16"
+   ],
+   "expect": "If the load disconnects, the full 0.06 mA flows through the zener, which works out to 4.9 mW across 81.33 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "47.75",
+    "14.16",
+    "81109.51"
+   ],
+   "expect": "Dropping 47.75 V to 14.16 V at 81109.51 mA calls for a 0.41 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "47.75",
+    "14.16",
+    "587339.21"
+   ],
+   "expect": "With a 587339.21 Ω resistor, the drop runs 0.06 mA and the resistor burns 1.92 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "47.75",
+    "14.16",
+    "587339.21"
+   ],
+   "expect": "If the load disconnects, the full 0.06 mA flows through the zener, which works out to 0.81 mW across 14.16 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "99.34",
+    "91.04",
+    "91832.42"
+   ],
+   "expect": "Dropping 99.34 V to 91.04 V at 91832.42 mA calls for a 0.09 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "99.34",
+    "91.04",
+    "878381.92"
+   ],
+   "expect": "With a 878381.92 Ω resistor, the drop runs 0.01 mA and the resistor burns 0.08 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "99.34",
+    "91.04",
+    "878381.92"
+   ],
+   "expect": "If the load disconnects, the full 0.01 mA flows through the zener, which works out to 0.86 mW across 91.04 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "62.93",
+    "24.83",
+    "41413.12"
+   ],
+   "expect": "Dropping 62.93 V to 24.83 V at 41413.12 mA calls for a 0.92 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "62.93",
+    "24.83",
+    "174905.03"
+   ],
+   "expect": "With a 174905.03 Ω resistor, the drop runs 0.22 mA and the resistor burns 8.3 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "62.93",
+    "24.83",
+    "174905.03"
+   ],
+   "expect": "If the load disconnects, the full 0.22 mA flows through the zener, which works out to 5.41 mW across 24.83 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "71.6",
+    "62.07",
+    "96355.01"
+   ],
+   "expect": "Dropping 71.6 V to 62.07 V at 96355.01 mA calls for a 0.1 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "71.6",
+    "62.07",
+    "33550.65"
+   ],
+   "expect": "With a 33550.65 Ω resistor, the drop runs 0.28 mA and the resistor burns 2.71 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "71.6",
+    "62.07",
+    "33550.65"
+   ],
+   "expect": "If the load disconnects, the full 0.28 mA flows through the zener, which works out to 17.63 mW across 62.07 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "99.8",
+    "37.69",
+    "53942.55"
+   ],
+   "expect": "Dropping 99.8 V to 37.69 V at 53942.55 mA calls for a 1.15 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "99.8",
+    "37.69",
+    "110918.92"
+   ],
+   "expect": "With a 110918.92 Ω resistor, the drop runs 0.56 mA and the resistor burns 34.78 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "99.8",
+    "37.69",
+    "110918.92"
+   ],
+   "expect": "If the load disconnects, the full 0.56 mA flows through the zener, which works out to 21.1 mW across 37.69 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "92.44",
+    "88.08",
+    "71584.72"
+   ],
+   "expect": "Dropping 92.44 V to 88.08 V at 71584.72 mA calls for a 0.06 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "92.44",
+    "88.08",
+    "375331.28"
+   ],
+   "expect": "With a 375331.28 Ω resistor, the drop runs 0.01 mA and the resistor burns 0.05 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "92.44",
+    "88.08",
+    "375331.28"
+   ],
+   "expect": "If the load disconnects, the full 0.01 mA flows through the zener, which works out to 1.02 mW across 88.08 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "100",
+    "69.39",
+    "90260.26"
+   ],
+   "expect": "Dropping 100 V to 69.39 V at 90260.26 mA calls for a 0.34 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "100",
+    "69.39",
+    "551614.73"
+   ],
+   "expect": "With a 551614.73 Ω resistor, the drop runs 0.06 mA and the resistor burns 1.7 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "100",
+    "69.39",
+    "551614.73"
+   ],
+   "expect": "If the load disconnects, the full 0.06 mA flows through the zener, which works out to 3.85 mW across 69.39 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "69.12",
+    "39.21",
+    "68002.22"
+   ],
+   "expect": "Dropping 69.12 V to 39.21 V at 68002.22 mA calls for a 0.44 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "69.12",
+    "39.21",
+    "849762.67"
+   ],
+   "expect": "With a 849762.67 Ω resistor, the drop runs 0.04 mA and the resistor burns 1.05 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "69.12",
+    "39.21",
+    "849762.67"
+   ],
+   "expect": "If the load disconnects, the full 0.04 mA flows through the zener, which works out to 1.38 mW across 39.21 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "99.92",
+    "95.45",
+    "16858.84"
+   ],
+   "expect": "Dropping 99.92 V to 95.45 V at 16858.84 mA calls for a 0.27 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "99.92",
+    "95.45",
+    "415501.52"
+   ],
+   "expect": "With a 415501.52 Ω resistor, the drop runs 0.01 mA and the resistor burns 0.05 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "99.92",
+    "95.45",
+    "415501.52"
+   ],
+   "expect": "If the load disconnects, the full 0.01 mA flows through the zener, which works out to 1.03 mW across 95.45 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "45.96",
+    "19.06",
+    "46717.23"
+   ],
+   "expect": "Dropping 45.96 V to 19.06 V at 46717.23 mA calls for a 0.58 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "45.96",
+    "19.06",
+    "24784.53"
+   ],
+   "expect": "With a 24784.53 Ω resistor, the drop runs 1.09 mA and the resistor burns 29.2 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "45.96",
+    "19.06",
+    "24784.53"
+   ],
+   "expect": "If the load disconnects, the full 1.09 mA flows through the zener, which works out to 20.69 mW across 19.06 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "93.61",
+    "92.84",
+    "46578.73"
+   ],
+   "expect": "Dropping 93.61 V to 92.84 V at 46578.73 mA calls for a 0.02 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "93.61",
+    "92.84",
+    "473104.08"
+   ],
+   "expect": "With a 473104.08 Ω resistor, the drop runs 0 mA and the resistor burns 0 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "93.61",
+    "92.84",
+    "473104.08"
+   ],
+   "expect": "If the load disconnects, the full 0 mA flows through the zener, which works out to 0.15 mW across 92.84 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "79.5",
+    "43.45",
+    "44184.78"
+   ],
+   "expect": "Dropping 79.5 V to 43.45 V at 44184.78 mA calls for a 0.82 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "79.5",
+    "43.45",
+    "495444.52"
+   ],
+   "expect": "With a 495444.52 Ω resistor, the drop runs 0.07 mA and the resistor burns 2.62 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "79.5",
+    "43.45",
+    "495444.52"
+   ],
+   "expect": "If the load disconnects, the full 0.07 mA flows through the zener, which works out to 3.16 mW across 43.45 V."
+  },
+  {
+   "fn": "resistor",
+   "args": [
+    "80.34",
+    "70.77",
+    "56861.74"
+   ],
+   "expect": "Dropping 80.34 V to 70.77 V at 56861.74 mA calls for a 0.17 Ω series resistor."
+  },
+  {
+   "fn": "power",
+   "args": [
+    "80.34",
+    "70.77",
+    "56093.91"
+   ],
+   "expect": "With a 56093.91 Ω resistor, the drop runs 0.17 mA and the resistor burns 1.63 mW."
+  },
+  {
+   "fn": "noload",
+   "args": [
+    "80.34",
+    "70.77",
+    "56093.91"
+   ],
+   "expect": "If the load disconnects, the full 0.17 mA flows through the zener, which works out to 12.07 mW across 70.77 V."
+  }
+ ],
+ "errors": [
+  [
+   "resistor",
+   [
+    "5.1",
+    "5.1",
+    "25"
+   ]
+  ],
+  [
+   "resistor",
+   [
+    "5",
+    "5.1",
+    "25"
+   ]
+  ],
+  [
+   "resistor",
+   [
+    "0",
+    "5.1",
+    "25"
+   ]
+  ],
+  [
+   "resistor",
+   [
+    "12",
+    "5.1",
+    "0"
+   ]
+  ],
+  [
+   "resistor",
+   [
+    "12",
+    "5.1",
+    "100000.001"
+   ]
+  ],
+  [
+   "power",
+   [
+    "12",
+    "12",
+    "276"
+   ]
+  ],
+  [
+   "power",
+   [
+    "12",
+    "5.1",
+    "0"
+   ]
+  ],
+  [
+   "noload",
+   [
+    "12",
+    "5.1",
+    "1000000.001"
+   ]
+  ],
+  [
+   "power",
+   [
+    "100.001",
+    "5.1",
+    "276"
+   ]
+  ],
+  [
+   "noload",
+   [
+    "0",
+    "5.1",
+    "276"
+   ]
+  ]
+ ]
+}
